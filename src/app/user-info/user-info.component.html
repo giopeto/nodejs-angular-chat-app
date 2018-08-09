@@ -1,0 +1,5 @@
+<div *ngIf="!userIsAdded">
+	<input #userName placeholder="What's your name"/>
+	<button title="Send" (click)="setUser(userName.value)">Send</button>
+</div>
+<app-chat *ngIf="userIsAdded"></app-chat>
